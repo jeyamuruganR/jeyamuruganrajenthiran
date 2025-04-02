@@ -1,0 +1,276 @@
+#project {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: visible;
+}
+
+#project .project_container {
+    position: relative;
+    margin-top: 140px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#project .project_container .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 100%;
+    position: sticky;
+    top: -90px;
+    z-index: 20;
+    padding: 10px 0;
+    
+
+}
+
+#project .project_container .heading h1 {
+    text-align: center;
+    color: coral;
+
+}
+
+#project .project_container .project_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#project .project_container .project_box .projectnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    position: sticky;
+    top:0px;
+    z-index: 11;
+    border-bottom: 2px solid rgb(109, 105, 105);
+    height: 60px;
+    overflow: hidden;
+    font-size: 1.5rem;
+    transition: 0;
+    text-align: end;
+    background-color: #1f1f1f;
+    
+
+
+}
+
+#project .project_container .project_box .projectnav ul {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    left: 20px;
+    padding: 10px 0;
+
+
+}
+
+#project .project_container .project_box .projectnav ul li {
+    list-style: none;
+    
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 800;
+
+    text-align: end;
+
+}
+
+
+#project .project_container .project_box .projectnav ul li:hover {
+    color: violet;
+
+    border-bottom: 2px solid white;
+}
+
+#project .project_container .project_box .projectList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    overflow: hidden;
+    
+}
+
+#project .project_container .project_box .projectList .progaram_box {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-content: center;
+    padding: min(3em, 8%);
+    position: relative;
+
+}
+
+
+#project .project_container .project_box .projectList .progaram_box .progaram_item {
+    width: 200px;
+    height: 220px;
+    white-space: break-word;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+
+
+
+}
+
+#project .project_container .project_box .projectList .progaram_box .progaram_item .progaram_img {
+
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+
+
+
+
+}
+
+#project .project_container .project_box .projectList .progaram_box .progaram_item .progaram_img img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+
+
+}
+
+#project .project_container .project_box .projectList .progaram_box .progaram_text {
+    position: absolute;
+    bottom: 0px;
+    color: black;
+    width: 200px;
+    height: 60px;
+    padding: 7px;
+}
+
+#project .project_container .project_box .projectList .progaram_box .progaram_text h2 {
+
+    font-size: .7rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+
+
+}
+
+#project .project_container .project_box .projectList .progaram_box .progaram_text p {
+    font-size: .4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+
+
+}
+
+#project .project_container .project_box .projectList .progaram_box .progaram_text .icons {
+
+    display: flex;
+    gap: 10px;
+    padding-top: 7px;
+    color: rgb(5, 72, 59);
+
+
+}
+
+#project .project_container .project_box .projectList .progaram_box .progaram_text .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 25px;
+    background-color: rgb(5, 72, 59);
+    color: white;
+    font-size: .7rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+
+
+}
+
+#project .project_container .project_box .projectList .progaram_box .progaram_text .button button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: .7rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+#project .project_container .project_box .projectList .desion_box {
+    display:none;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+}
+
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    padding: 0 4px;
+   
+  }
+  
+ 
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 45%;
+    padding: 0 4px;
+ 
+    
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    /* box-shadow: 0px 0px 2px 3px; */
+    color: b;
+  }
+  
+  @media screen and (min-width:1024px) {
+    #project .project_container .project_box .projectnav{
+    
+        top: 20px;
+
+    }
+    
+ }

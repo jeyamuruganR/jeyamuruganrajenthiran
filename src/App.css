@@ -1,0 +1,30 @@
+
+
+@font-face {
+    font-family: "autograph";
+    src: url("./font/Autography.otf");
+}
+
+
+
+@font-face {
+    font-family: "Loverine";
+    src: url("./font/Loverine.otf");
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1f1f1f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }

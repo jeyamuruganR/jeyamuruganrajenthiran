@@ -1,0 +1,97 @@
+#Eduction{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+}
+
+#Eduction .eduction-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    padding: 20px;
+    /* border: 2px solid red; */
+    margin: 80px;
+    
+
+}
+#Eduction .eduction-container .heading{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    text-transform: uppercase;
+    color: coral;
+    border-bottom: 2px solid white;
+
+}
+#Eduction .eduction-container .innerContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+#Eduction .eduction-container .innerContainer .eduction-box{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#Eduction .eduction-container .innerContainer .eduction-box .eduction-item{
+    width: 250px;
+    height: 150px;
+    background-color: #1f1f1f;
+    padding: 10px;
+    /* border: 2px solid #000000; */
+    color: white;
+    box-shadow: 0px 0px 5px 1px rgb(37, 37, 37) ,
+    0px 0px 5px 1px rgba(0, 0, 0, 0.39) inset;
+    border-radius: 20px;
+
+}
+
+#Eduction .eduction-container .innerContainer .eduction-box .eduction-item h2{
+
+    font-size: 1rem;
+    color: white;
+    font-weight:bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+#Eduction .eduction-container .innerContainer .eduction-box .eduction-item P:nth-child(2){
+    font-size: 1rem;
+    color: white;
+    font-weight:bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+#Eduction .eduction-container .innerContainer .eduction-box .eduction-item P:nth-child(3){
+    font-size: .6rem;
+    color: white;
+    font-weight:bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+@media screen and (min-width : 1024px) {
+    
+    #Eduction .eduction-container .heading{
+        text-align: left;
+    }
+}
+

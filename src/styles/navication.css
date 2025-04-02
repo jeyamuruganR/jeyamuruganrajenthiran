@@ -1,0 +1,165 @@
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 50px;
+    background-color: transparent;
+    z-index: 100;
+
+}
+/* logo  */
+.nav .logo{
+
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    text-align: center;
+
+}
+.nav .logo img{
+    position: relative;
+    top: 20px;
+}
+
+/* List  */
+
+.nav .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+
+/* nav bar */
+.nav .list .navbar{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    /* background-color: white; */
+    
+    right: 0;
+    top: 0;
+    transition: .5s;
+    z-index: 3;
+}
+
+.nav .list .navbar span{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.nav .list .navbar span::before{
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: .5s;
+}
+.nav .list .navbar span::after{
+    content: " ";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: .5s;
+    transform: translateY(-12px);
+    box-shadow: 0 25px #fff;
+    transition: .5s;
+}
+.nav .list .active span {
+    transform: rotate(135deg);
+    transition-delay: .5s;
+} 
+.nav .list .active span::before{
+    transform: rotate(-270deg);
+transition-delay: 1s;
+}
+.nav .list .active span::after{
+    width: 40px;
+    transform:translateY(0px);
+    box-shadow: 0 0px #fff;
+    
+}
+.nav .list ul{
+    width: 100%;
+    background-color: #1f1f1f;;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items:start;
+    padding: 10px;
+    transition: 2s;
+    opacity: 0;
+    
+
+}
+.nav .list ul li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    /* background-color: aliceblue; */
+    padding: 20px;
+    
+
+
+    
+}
+.nav .list ul li a{
+    display: flex;
+    gap: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-decoration: none;
+}
+.nav .list ul li:hover a{
+    color: coral;
+}
+@media screen and (min-width:1024px){
+    .nav .list{
+        background-color: green;
+        width: 100%;
+
+    }
+    .nav .list ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background: none;
+        position:absolute;
+        opacity: 1;
+        transform: none;
+        /* background-color: red; */
+        
+    }
+    .nav .list .navbar{
+        display: none;
+    }
+    .nav .list ul li {
+        
+    }
+    .nav .list ul li  a{
+        font-size: 1rem;
+    } 
+}
