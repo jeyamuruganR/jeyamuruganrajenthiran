@@ -28,12 +28,11 @@ const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     if (scrollY >= 100) {
-      navRef.current.style.fontSize = "1rem";
       navRef.current.style.height= "100px";
 
     }
     else{
-      navRef.current.style.fontSize = "1.5rem";
+      
     }
   }, [scrollY]);
 
@@ -66,6 +65,7 @@ const [scrollY, setScrollY] = useState(0);
       imgUrl: project1,
       description: "this is my first portfillo website",
       useLonguage: [faHtml5, faCss3, faJs, faReact],
+      view:"https://jeyamuruganr.github.io/jeya/"
 
 
     },
@@ -140,7 +140,7 @@ const [scrollY, setScrollY] = useState(0);
                         ))}
                       </div>
                       <div className="button">
-                        <button>view</button>
+                        <button><a href={item.view} target='black'>view</a></button>
                       </div>
                     </div>
                   </div>
