@@ -1,0 +1,190 @@
+#skils {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#skils .project-container>div {
+    background-color: #1f1f1f;
+    box-shadow:
+        0px 0px 10px rgba(0, 0, 0, 0.47) inset;
+
+    border-radius: 20px;
+
+}
+
+#skils .project-container {
+    display: grid;
+    grid-template-columns: 200px 00px 200px;
+    grid-template-rows: 300px 200px 200px;
+    grid-template-areas: "box-1 box-1 box-1"
+        "box-2 box-2 box-2"
+        "box-3 box-0 box-4";
+    gap: 8px;
+    padding: 0px;
+    margin-top: 100px;
+
+
+
+
+
+
+
+}
+
+#skils .project-container .language {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skils .project-container .language .barLine {
+    width: 80%;
+    height: 80%;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 0;
+    display: flex;
+    justify-content: start;
+    gap: 35px;
+    align-items: end;
+    padding-left: 10px;
+    position: relative;
+
+
+}
+
+
+#skils .project-container .language .barLine .bar {
+    width: 20px;
+    height: 0%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    animation: BarRef 2s ease-in-out forwards;
+
+
+}
+
+@keyframes BarRef {
+    0% {
+        height: 0%;
+    }
+
+    100% {}
+
+}
+
+#skils .project-container .language .barLine .bar::after {
+    content: var(--LogName);
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: .7rem;
+    font-weight: 800;
+    color: var(--color);
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+#skils .project-container .feramwork {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
+
+
+}
+
+#skils .project-container .feramwork .subHead {
+    position: absolute;
+    top: -25px;
+    border: none;
+    box-shadow: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#skils .project-container .feramwork div {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1f1f1f;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 50%;
+
+
+}
+
+#skils .project-container .feramwork div .innercicl {
+    width: 90px;
+    height: 90px;
+    box-shadow: 0px 0px 5px black inset;
+}
+
+#skils .project-container .feramwork .list {
+
+    position: absolute;
+    bottom: -25px;
+    width: 40%;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+#skils .project-container .feramwork .list ul {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#skils .project-container .feramwork div canvas {
+    /* border: 2px solid rgb(255, 255, 255); */
+    position: relative;
+    left: 44px;
+
+}
+
+.ico {
+    position: absolute;
+    font-size: 2rem;
+    color: tomato;
+}
+
+.ico .frione {
+    filter: drop-shadow(0px 0px 10px tomato);
+}
+
+
+@media screen and (min-width:1024px) {
+    #skils .project-container {
+        grid-template-columns: 500px 250px 250px;
+        grid-template-rows: 300px 150px 150px;
+        grid-template-areas: "box-1 box-2 box-2"
+            "box-1 box-3 box-4";
+
+    }
+
+    #skils .project-container .language .barLine {
+        gap: 50px;
+    }
+
+}

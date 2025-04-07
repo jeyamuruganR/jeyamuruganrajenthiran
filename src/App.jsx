@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter,Route, Routes } from 'react-router'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Euduction from './pages/Euduction'
@@ -11,15 +11,15 @@ import './App.css'
 import Error from './pages/Error'
 import  './styles/About.css'
 import './styles/Project.css'
-
 import './styles/Education.css'
+import './styles/Skil.css'
 
 function App() {
 
 
   return (
   
-    <BrowserRouter basename='jeyamuruganrajenthiran'>
+    <>
     <Navication/>
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -32,7 +32,7 @@ function App() {
 
       </Routes>
 
-    </BrowserRouter>
+    </>
   )
 }
 

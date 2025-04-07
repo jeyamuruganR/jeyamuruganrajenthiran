@@ -36,79 +36,78 @@ const Home = () => {
     </div>
   ));
 
-  console.log(location.pathname);
 
   useEffect(() => {
-    if (location.pathname === "/jeyamuruganrajenthiran") {
-       div1Ref.current.style.animationName ="div1";
-       div1Ref.current.style.animationDuration = "2s";
-       div1Ref.current.style.animationFillMode = "forwards"; 
-       div1Ref.current.style.opacity = "0";
 
-
-       div2Ref.current.style.animationName ="div2";
-       div2Ref.current.style.animationDuration = "2s";
-       div2Ref.current.style.animationFillMode = "forwards"; 
-       div2Ref.current.style.opacity = "0";
-
-       div3Ref.current.style.animationName ="div3";
-       div3Ref.current.style.animationDuration = "2s";
-       div3Ref.current.style.animationFillMode = "forwards";
-       div3Ref.current.style.opacity = "0";
-
-       div4Ref.current.style.animationName ="div4";
-       div4Ref.current.style.animationDuration = "2s";
-       div4Ref.current.style.animationFillMode = "forwards";
-       div4Ref.current.style.opacity = "0";
-
-       div5Ref.current.style.animationName ="div5";
-       div5Ref.current.style.animationDuration = "2s";
-       div5Ref.current.style.animationFillMode = "forwards";
-       div5Ref.current.style.opacity = "0";
-
-
-       firstRef.current.style.animationName = "firstref";
-       firstRef.current.style.animationDuration = "2s";
-       firstRef.current.style.animationFillMode = "forwards";
-       firstRef.current.style.opacity = "0";
-       
-
-       nameref.current.style.animationName = "firstref";
-       nameref.current.style.animationDuration = "2s";
-       nameref.current.style.animationFillMode = "forwards";
-       nameref.current.style.animationDelay = "1s";
-       nameref.current.style.opacity = "0";
-       
-
-       posref.current.style.animationName = "firstref";
-       posref.current.style.animationDuration = "2s";
-       posref.current.style.animationFillMode = "forwards";
-       posref.current.style.animationDelay = "1.5s";
-       posref.current.style.opacity = "0";
-       
-       pearref.current.style.animationDuration = "2s";
-       pearref.current.style.animationName = "pearref";
-       pearref.current.style.animationFillMode = "forwards";
-       pearref.current.style.animationDelay = "1.5s";
-       pearref.current.style.opacity = "0";
-
-
-      put1.current.style.animationDuration = "2s";
-      put1.current.style.animationName = "put1";
-      put1.current.style.animationFillMode = "forwards";
-      put1.current.style.animationDelay = "1.8s";
-      put1.current.style.opacity = "0";
-
-      put2.current.style.animationDuration = "2s";
-      put2.current.style.animationName = "put1";
-      put2.current.style.animationFillMode = "forwards";
-      put2.current.style.animationDelay = "2s";
-      put2.current.style.opacity = "0";
-      
-
+      if (location.pathname === "/jeyamuruganrajenthiran") {
+        div1Ref.current.style.animationName ="div1";
+        div1Ref.current.style.animationDuration = "2s";
+        div1Ref.current.style.animationFillMode = "forwards"; 
+        div1Ref.current.style.opacity = "0";
+ 
+ 
+        div2Ref.current.style.animationName ="div2";
+        div2Ref.current.style.animationDuration = "2s";
+        div2Ref.current.style.animationFillMode = "forwards"; 
+        div2Ref.current.style.opacity = "0";
+ 
+        div3Ref.current.style.animationName ="div3";
+        div3Ref.current.style.animationDuration = "2s";
+        div3Ref.current.style.animationFillMode = "forwards";
+        div3Ref.current.style.opacity = "0";
+ 
+        div4Ref.current.style.animationName ="div4";
+        div4Ref.current.style.animationDuration = "2s";
+        div4Ref.current.style.animationFillMode = "forwards";
+        div4Ref.current.style.opacity = "0";
+ 
+        div5Ref.current.style.animationName ="div5";
+        div5Ref.current.style.animationDuration = "2s";
+        div5Ref.current.style.animationFillMode = "forwards";
+        div5Ref.current.style.opacity = "0";
+ 
+ 
+        firstRef.current.style.animationName = "firstref";
+        firstRef.current.style.animationDuration = "2s";
+        firstRef.current.style.animationFillMode = "forwards";
+        firstRef.current.style.opacity = "0";
+        
+ 
+        nameref.current.style.animationName = "firstref";
+        nameref.current.style.animationDuration = "2s";
+        nameref.current.style.animationFillMode = "forwards";
+        nameref.current.style.animationDelay = "1s";
+        nameref.current.style.opacity = "0";
+        
+ 
+        posref.current.style.animationName = "firstref";
+        posref.current.style.animationDuration = "2s";
+        posref.current.style.animationFillMode = "forwards";
+        posref.current.style.animationDelay = "1.5s";
+        posref.current.style.opacity = "0";
+        
+        pearref.current.style.animationDuration = "2s";
+        pearref.current.style.animationName = "pearref";
+        pearref.current.style.animationFillMode = "forwards";
+        pearref.current.style.animationDelay = "1.5s";
+        pearref.current.style.opacity = "0";
+ 
+ 
+       put1.current.style.animationDuration = "2s";
+       put1.current.style.animationName = "put1";
+       put1.current.style.animationFillMode = "forwards";
+       put1.current.style.animationDelay = "1.8s";
+       put1.current.style.opacity = "0";
+ 
+       put2.current.style.animationDuration = "2s";
+       put2.current.style.animationName = "put1";
+       put2.current.style.animationFillMode = "forwards";
+       put2.current.style.animationDelay = "2s";
+       put2.current.style.opacity = "0";
 
 
     }
+    
   }, []);
   
 

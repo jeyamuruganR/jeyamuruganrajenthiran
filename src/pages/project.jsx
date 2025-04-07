@@ -152,20 +152,20 @@ const [scrollY, setScrollY] = useState(0);
             <div className="desion_box" ref={designRef}>
               <div className="row">
                 <div className="column">
-                  <img src={portfillo} alt=""  style={{
+                  <img src={portfillo} alt="" className="imgani"  style={{
                     border:"2px solid black"
                   }}/>
-                  <img src={coffeStote} alt="" />
+                  <img src={coffeStote} className='imgani'  alt="" />
                   
                 </div>
                 <div className="column">
-                  <img src={Birthday} alt="" />
-                  <img src={Bithday2} alt="" />
+                  <img src={Birthday} className='imgani'  alt="" />
+                  <img src={Bithday2} className='imgani'  alt="" />
                  
                 </div>
                 <div className="column">
-                <img src={photoArt} alt="" />
-                <img src={Christmas} alt="" />
+                <img src={photoArt} className='imgani'  alt="" />
+                <img src={Christmas}  className='imgani' alt="" />
 
                 </div>
 
